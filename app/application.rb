@@ -1,7 +1,6 @@
 class Application
   def call(env)
     resp = Rack::Response.new
-    resp = Rack::Response.new
   end
 end
 
@@ -20,7 +19,7 @@ class Application
       resp.write "You Lose"
     end
  
-    
+    resp.finish
   end
  
 end
